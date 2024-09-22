@@ -761,7 +761,7 @@ CBD_USE_V2 := true
 CBD_PROTOCOL_SIT := true
 
 # setup dalvik vm configs.
-$(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
+#$(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 
@@ -828,8 +828,8 @@ endif
 PRODUCT_PACKAGES += \
 	vndk-libs
 
-PRODUCT_ENFORCE_RRO_TARGETS := \
-	framework-res
+#PRODUCT_ENFORCE_RRO_TARGETS := \
+	#framework-res
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
